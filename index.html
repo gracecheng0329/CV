@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Grace Cheng</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="icon/android-chrome-192x192.png">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      letter-spacing: 2px;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #bfd5e2, #d1bab6);
+    }
+
+    .card {
+      width: 70%;
+      /* border: 3px solid cadetblue; */
+      margin: 30px auto;
+      background-color: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 5px 5px 5px 5px gray;
+      padding: 20px;
+      position: relative;
+    }
+
+    /* .card:hover {
+            transition: 0.5s ease-in;
+            transform: translate(20px, -20px);
+            box-shadow: 5px 5px 5px 5px gray;
+        } */
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .pic {
+      width: 200px;
+      height: 200px;
+      /* border: 1px solid black; */
+      border-radius: 50%;
+      margin: 20px 0px 20px 70px;
+      background: url(avataaars.png) center center no-repeat;
+      background-size: cover;
+      /* box-shadow: 2px 0px 2px 2px grey; */
+    }
+
+    .pic:hover {
+      transition: 1s ease-out;
+      transform: translate(30px, 30px) scale(1.5);
+    }
+
+    .name {
+      width: 40%;
+      text-align: left;
+      padding: 20px 0px;
+      /* border: 1px solid black; */
+      /* margin: 20px; */
+    }
+
+    .name:hover {
+      transition: 0.5s;
+      transform: translate(10px, 10px);
+    }
+
+    h1 {
+      font-size: 50px;
+      font-weight: 900;
+      color: black;
+      background: url(mosaic-3394375_640.jpg);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    h3 {
+      font-size: 30px;
+      font-weight: 900;
+      background: -webkit-linear-gradient(cadetblue 40%, rgb(200, 70, 23));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .contact {
+      width: 30%;
+      text-align: right;
+      word-wrap: break-all;
+      padding: 5px;
+      /* border: 1px solid black; */
+    }
+
+    .contact:hover {
+      transition: 0.5s;
+      transform: rotate3d(1, 1, 0, 25deg);
+    }
+
+    .space {
+      margin: 10px 5px;
+      font-size: 20px;
+    }
+
+    .icon-location2 {
+      width: 20px;
+      height: 20px;
+      color: cadetblue;
+      fill: currentColor;
+    }
+
+    .icon-mobile {
+      width: 20px;
+      height: 20px;
+      color: cadetblue;
+      fill: currentColor;
+    }
+
+    .icon-envelop {
+      width: 20px;
+      height: 20px;
+      color: cadetblue;
+      fill: currentColor;
+    }
+
+    .box {
+      display: flex;
+      padding-bottom: 80px;
+    }
+
+    main {
+      width: 70%;
+    }
+
+    .summary {
+      margin: 0px 20px;
+      text-align: justify;
+      /* padding: 5px; */
+      transition: 0.5s;
+    }
+
+    .summary:hover {
+      transform: translate(5px, 5px);
+      /* border: 1px solid cadetblue; */
+      border-radius: 15px;
+      background-color: rgba(95, 158, 160, 0.178);
+    }
+
+    h4 {
+      margin: 5px 20px;
+      font-size: 20px;
+      padding-bottom: 5px;
+      border-bottom: 4px solid cadetblue;
+    }
+
+    h2 {
+      margin: 5px 20px 0px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .job {
+      padding: 5px;
+      width: 95%;
+    }
+
+    .job:hover {
+      transition: 0.5s;
+      transform: translate(5px, 5px);
+      border-radius: 15px;
+      background-color: rgba(95, 158, 160, 0.178);
+    }
+
+    .job2 {
+      padding: 5px;
+      width: 95%;
+      transition: 0.5s;
+    }
+
+    .job2:hover {
+      transform: translate(5px, 5px);
+      border-radius: 15px;
+      background-color: rgba(95, 158, 160, 0.178);
+    }
+
+    .work {
+      display: flex;
+      justify-content: space-between;
+      color: cadetblue;
+      font-style: italic;
+    }
+
+    .time {
+      color: cadetblue;
+      font-style: italic;
+    }
+
+    aside .time {
+      text-align: end;
+    }
+
+    h6 {
+      margin: 3px 20px;
+      font-size: 15px;
+    }
+
+    main p {
+      margin: 5px 20px;
+      font-size: 15px;
+      text-align: justify;
+      line-height: 30px;
+    }
+
+    aside {
+      width: 30%;
+    }
+
+    .expert {
+      display: flex;
+      width: 90%;
+      margin: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      /* width: fit-content; */
+      padding: 3px 10px;
+      background-color: rgb(200, 70, 23);
+      color: #fff;
+      margin: 3px 5px;
+      border-radius: 5px;
+      font-size: 15px;
+      text-align: justify;
+      white-space: nowrap;
+    }
+
+    .skill:hover {
+      transition: 0.5s ease-in;
+      transform: scale(1.2);
+    }
+
+    aside h2 {
+      font-size: 17px;
+      /* font-weight: 400; */
+    }
+
+    aside p {
+      margin: 5px 20px;
+      font-size: 15px;
+      text-align: start;
+      /* padding: 40px; */
+    }
+
+    .cert1 {
+      transition: 0.5s;
+      /* padding: 5px 20px; */
+    }
+
+    .cert1:hover {
+      transform: translate(5px, 5px);
+      border-radius: 15px;
+      background-color: rgba(95, 158, 160, 0.178);
+    }
+
+    .cert2 {
+      transition: 0.5s;
+      /* padding: 5px 20px; */
+    }
+
+    .cert2:hover {
+      transform: translate(5px, 5px);
+      border-radius: 15px;
+      background-color: rgba(95, 158, 160, 0.178);
+    }
+
+    .cert3 {
+      transition: 0.5s;
+      /* padding: 5px 20px; */
+    }
+
+    .cert3:hover {
+      transform: translate(5px, 5px);
+      border-radius: 15px;
+      background-color: rgba(95, 158, 160, 0.178);
+    }
+
+    .edu {
+      transition: 0.5s;
+    }
+
+    .edu:hover {
+      transform: translate(5px, 5px);
+      border-radius: 15px;
+      background-color: rgba(95, 158, 160, 0.178);
+    }
+
+    .lan {
+      transition: 0.5s;
+    }
+
+    .lan:hover {
+      transform: translate(5px, 5px);
+      border-radius: 15px;
+      background-color: rgba(95, 158, 160, 0.178);
+    }
+
+    .hob {
+      transition: 0.5s;
+    }
+
+    .hob:hover {
+      transform: translate(5px, 5px);
+      border-radius: 15px;
+      background-color: rgba(95, 158, 160, 0.178);
+    }
+
+    footer {
+      width: 100%;
+      height: 40px;
+      background-color: cadetblue;
+      /* margin: 0 -20px -20px; */
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      .box {
+        flex-direction: column;
+      }
+
+      main {
+        width: 100%;
+      }
+
+      aside {
+        width: 100%;
+      }
+
+      .name {
+        width: 100%;
+        text-align: center;
+      }
+
+      .contact {
+        width: 100%;
+        text-align: center;
+      }
+
+      .pic {
+        margin: 0px auto 0px;
+      }
+
+      main p {
+        margin: 5px 20px;
+        text-align: start;
+        line-height: 30px;
+      }
+
+      .summary {
+        text-align: start;
+      }
+
+      .work {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: cadetblue;
+        font-style: italic;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1299px) {
+      header {
+        flex-direction: column;
+      }
+
+      .box {
+        flex-direction: column;
+      }
+
+      main {
+        width: 100%;
+      }
+
+      aside {
+        width: 100%;
+      }
+
+      .name {
+        width: 100%;
+        text-align: center;
+      }
+
+      .contact {
+        width: 100%;
+        text-align: center;
+      }
+
+      .pic {
+        margin: 0px auto 0px;
+      }
+    }
+
+    @media (min-width: 1300px) {
+      header {
+        flex-direction: row;
+      }
+
+      .box {
+        flex-direction: row;
+      }
+
+      main {
+        width: 70%;
+      }
+
+      aside {
+        width: 30%;
+      }
+
+      .name {
+        width: 40%;
+        text-align: center;
+        padding-top: 50px;
+      }
+
+      .contact {
+        width: 30%;
+        text-align: end;
+      }
+
+      .pic {
+        margin: 20px 0px 20px 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <header>
+      <div class="pic"></div>
+      <div class="name">
+        <h1>Grace Cheng</h1>
+        <h3>Web Developer</h3>
+      </div>
+      <div class="contact">
+        <p class="space">
+          +886 976661111
+          <svg class="icon-mobile">
+            <use xlink:href="./icomoon/symbol-defs.svg#icon-mobile"></use>
+          </svg>
+        </p>
+        <p class="space">
+          New Taipei City, Taiwan
+          <svg class="icon-location2">
+            <use xlink:href="./icomoon/symbol-defs.svg#icon-location2"></use>
+          </svg>
+        </p>
+        <p class="space">
+          yurisine7@gmail.com
+          <svg class="icon-envelop">
+            <use xlink:href="./icomoon/symbol-defs.svg#icon-envelop"></use>
+          </svg>
+        </p>
+      </div>
+    </header>
+    <div class="box">
+      <main>
+        <div class="profile">
+          <h4>PROFILE</h4>
+
+          <p class="summary">
+            A fast learner with excellent attention to detail coupled with a
+            result-oriented approach when facing new challenges. Able to be
+            agile and quickly adapt to environments and keen to absorb new
+            knowledge. Excellent verbal and written communication skills in
+            both English and Mandarin.
+          </p>
+        </div>
+        <h4>AREA OF EXPERTISE</h4>
+        <div class="expert">
+          <div class="skill">HTML5</div>
+          <div class="skill">CSS3</div>
+          <div class="skill">JavaScipt(ES6)</div>
+          <div class="skill">Adobe Illustrator</div>
+          <div class="skill">Adobe Photoshop</div>
+          <div class="skill">Adobe XD</div>
+          <div class="skill">HACCP</div>
+          <div class="skill">H&S Management</div>
+          <div class="skill">Microsoft Office Suite</div>
+        </div>
+        <h4>WORK EXPERIENCE</h4>
+
+        <div class="job">
+          <h2>HACCP, Health & Safety Specialist</h2>
+          <h6>Limasole Ltd.</h6>
+          <h6 class="time">05/2018 - 03/2020</h6>
+          <div class="work">
+            <h6>Achievement</h6>
+            <h6>London, U.K.</h6>
+          </div>
+          <p>
+            - Complete training documents and strengthen staff training on
+            health & safety, food hygiene, HACCP.
+          </p>
+          <p>
+            - Offer real-time solutions to customers who raise complaints by
+            proactively utilising batch codes to track down the products.
+          </p>
+          <p>
+            - Improve internal hygiene of factory and decrease the customer
+            complaints by 20%.
+          </p>
+          <p>
+            - Accomplish general risk assessments and findings and reduce the
+            occupational injuries by 30%.
+          </p>
+          <p>
+            - Control the production process and improve the product quality.
+          </p>
+        </div>
+
+        <div class="job2">
+          <h2>Sales</h2>
+          <h6>Rextron International, Inc.</h6>
+          <h6 class="time">06/2015 - 09/2017</h6>
+          <div class="work">
+            <h6>Achievement</h6>
+            <h6>Taipei, Taiwan</h6>
+          </div>
+          <p>
+            - In charge of major clients from America and Europe, not only
+            maintained business relationship, but also enhanced overall sales
+            performance by 20%.
+          </p>
+          <p>
+            - Visited potential customers to maintain and establish initial
+            trading relationships.
+          </p>
+          <p>
+            - Arranged domestic and international exhibitions to promote
+            products and explore potential customers.
+          </p>
+          <p>
+            - Organized OEM project plans for corporate clients and managed
+            the process by cooperating with relevant departments.
+          </p>
+          <p>
+            - Chaired customer complaint meeting with relevant units of
+            organization to solve problems effectively and provided the
+            perfect 8D report.
+          </p>
+        </div>
+      </main>
+      <aside>
+        <h4>CERTIFICATES</h4>
+        <div class="cert1">
+          <p>
+            - RSPH Level 3 Award in Understanding how to Develop a HACCP Plan
+          </p>
+          <p class="time">04/2019 - 04/2022</p>
+        </div>
+        <div class="cert2">
+          <p>- RSPH Level 2 Award in Food Safety for Food manufacturing</p>
+          <p class="time">01/2019 - 01/2022</p>
+        </div>
+        <div class="cert3">
+          <p>- First Aid at Work(10/2021)</p>
+          <p class="time">10/2018 - 10/2021</p>
+        </div>
+        <h4>EDUCATION</h4>
+        <div class="edu">
+          <h2>Bachelor Degree in Applied English</h2>
+          <p>Chihlee University of Technology</p>
+          <p class="time">09/2011 - 06/2015</p>
+        </div>
+        <h4>LANGUAGES</h4>
+        <div class="lan">
+          <p>- Mandarin</p>
+          <p>- English</p>
+        </div>
+        <h4>HOBBIES</h4>
+        <div class="hob">
+          <p>- Traveling</p>
+          <p>- Literature</p>
+          <p>- Photography</p>
+          <p>- Design</p>
+        </div>
+      </aside>
+    </div>
+
+    <footer></footer>
+  </div>
+</body>
+
+</html>
