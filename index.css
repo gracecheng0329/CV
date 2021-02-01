@@ -1,0 +1,438 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+body {
+  background: linear-gradient(to bottom right, #bfd5e2, #d1bab6);
+}
+a{
+    text-decoration: none;
+    color:rgb(0, 0, 0) ;
+    border: 1px solid cadetblue;
+    border-radius: 20px;
+    padding: 5px 10px;
+
+}
+
+.card {
+  width: 70%;
+  /* border: 3px solid cadetblue; */
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px 5px gray;
+  padding: 20px;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.pic {
+  width: 200px;
+  height: 200px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  margin: 20px 0px 20px 70px;
+  background: url(avataaars.png) center center no-repeat;
+  background-size: cover;
+  /* box-shadow: 2px 0px 2px 2px grey; */
+}
+
+.pic:hover {
+  transition: 1s ease-out;
+  transform: translate(30px, 30px) scale(1.5);
+}
+
+.name {
+  width: 40%;
+  text-align: left;
+  padding: 20px 0px;
+  /* border: 1px solid black; */
+  /* margin: 20px; */
+}
+
+.name:hover {
+  transition: 0.5s;
+  transform: translate(10px, 10px);
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 900;
+  color: black;
+  background: url(mosaic-3394375_640.jpg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(cadetblue 40%, rgb(200, 70, 23));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.contact {
+  width: 30%;
+  text-align: right;
+  word-wrap: break-all;
+  padding: 5px;
+  /* border: 1px solid black; */
+}
+
+.contact:hover {
+  transition: 0.5s;
+  transform: rotate3d(1, 1, 0, 25deg);
+}
+
+.space {
+  margin: 10px 5px;
+  font-size: 20px;
+}
+
+.icon-location2 {
+  width: 20px;
+  height: 20px;
+  color: cadetblue;
+  fill: currentColor;
+}
+
+.icon-mobile {
+  width: 20px;
+  height: 20px;
+  color: cadetblue;
+  fill: currentColor;
+}
+
+.icon-envelop {
+  width: 20px;
+  height: 20px;
+  color: cadetblue;
+  fill: currentColor;
+}
+
+.box {
+  display: flex;
+  padding-bottom: 80px;
+}
+
+main {
+  width: 70%;
+}
+
+.summary {
+  margin: 0px 20px;
+  text-align: justify;
+  /* padding: 5px; */
+  transition: 0.5s;
+}
+
+.summary:hover {
+  transform: translate(5px, 5px);
+  /* border: 1px solid cadetblue; */
+  border-radius: 15px;
+  background-color: rgba(95, 158, 160, 0.178);
+}
+
+h4 {
+  margin: 20px 20px 5px;
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 4px solid cadetblue;
+}
+
+h2 {
+  margin: 5px 20px 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.job {
+  padding: 5px;
+  width: 95%;
+}
+
+.job:hover {
+  transition: 0.5s;
+  transform: translate(5px, 5px);
+  border-radius: 15px;
+  background-color: rgba(95, 158, 160, 0.178);
+}
+
+.job2 {
+  padding: 5px;
+  width: 95%;
+  transition: 0.5s;
+}
+
+.job2:hover {
+  transform: translate(5px, 5px);
+  border-radius: 15px;
+  background-color: rgba(95, 158, 160, 0.178);
+}
+
+.work {
+  display: flex;
+  justify-content: space-between;
+  color: cadetblue;
+  font-style: italic;
+}
+
+.time {
+  color: cadetblue;
+  font-style: italic;
+}
+
+aside .time {
+  text-align: end;
+}
+
+h6 {
+  margin: 3px 20px;
+}
+
+main p {
+  margin: 5px 20px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+aside {
+  width: 30%;
+}
+
+.expert {
+  display: flex;
+  width: 90%;
+  margin: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  /* width: fit-content; */
+  padding: 3px 10px;
+  background-color: rgb(224, 106, 26);
+  color: #fff;
+  margin: 3px 5px;
+  border-radius: 20px;
+  text-align: justify;
+  white-space: nowrap;
+}
+
+.skill:hover {
+  transition: 0.5s ease-in;
+  transform: scale(1.2);
+}
+
+aside h2 {
+  font-size: 17px;
+  /* font-weight: 400; */
+}
+
+aside p {
+  margin: 5px 20px;
+  text-align: start;
+  /* padding: 40px; */
+}
+
+.cert1 {
+  transition: 0.5s;
+  /* padding: 5px 20px; */
+}
+
+.cert1:hover {
+  transform: translate(5px, 5px);
+  border-radius: 15px;
+  background-color: rgba(95, 158, 160, 0.178);
+}
+
+.cert2 {
+  transition: 0.5s;
+  /* padding: 5px 20px; */
+}
+
+.cert2:hover {
+  transform: translate(5px, 5px);
+  border-radius: 15px;
+  background-color: rgba(95, 158, 160, 0.178);
+}
+
+.cert3 {
+  transition: 0.5s;
+  /* padding: 5px 20px; */
+}
+
+.cert3:hover {
+  transform: translate(5px, 5px);
+  border-radius: 15px;
+  background-color: rgba(95, 158, 160, 0.178);
+}
+
+.edu {
+  transition: 0.5s;
+}
+
+.edu:hover {
+  transform: translate(5px, 5px);
+  border-radius: 15px;
+  background-color: rgba(95, 158, 160, 0.178);
+}
+
+.lan {
+  transition: 0.5s;
+}
+
+.lan:hover {
+  transform: translate(5px, 5px);
+  border-radius: 15px;
+  background-color: rgba(95, 158, 160, 0.178);
+}
+
+.hob {
+  transition: 0.5s;
+}
+
+.hob:hover {
+  transform: translate(5px, 5px);
+  border-radius: 15px;
+  background-color: rgba(95, 158, 160, 0.178);
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: cadetblue;
+  /* margin: 0 -20px -20px; */
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .name {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pic {
+    margin: 0px auto 0px;
+  }
+
+  main p {
+    margin: 5px 20px;
+    text-align: start;
+    line-height: 30px;
+  }
+
+  .summary {
+    text-align: start;
+  }
+
+  .work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: cadetblue;
+    font-style: italic;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1299px) {
+  header {
+    flex-direction: column;
+  }
+
+  .box {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  .name {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pic {
+    margin: 0px auto 0px;
+  }
+}
+
+@media (min-width: 1300px) {
+  header {
+    flex-direction: row;
+  }
+
+  .box {
+    flex-direction: row;
+  }
+
+  main {
+    width: 70%;
+  }
+
+  aside {
+    width: 30%;
+  }
+
+  .name {
+    width: 40%;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .contact {
+    width: 30%;
+    text-align: end;
+  }
+
+  .pic {
+    margin: 20px 0px 20px 50px;
+  }
+}
